@@ -1,0 +1,36 @@
+|lab3_p1
+F2 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst8.IN0
+A => inst16.IN0
+A => inst14.IN0
+A => inst31.IN0
+A => inst23.IN0
+A => test1.IN0
+A => inst27.IN0
+B => inst.IN1
+B => inst8.IN1
+B => inst15.IN0
+B => inst13.IN0
+B => inst32.IN0
+B => inst23.IN1
+B => inst28.IN0
+B => inst19.IN1
+C => inst7.IN0
+C => inst8.IN2
+C => inst11.IN1
+C => inst12.IN0
+C => inst26.IN0
+C => inst33.IN0
+C => inst29.IN0
+C => test2.IN0
+D => inst6.IN0
+D => inst9.IN2
+D => inst34.IN0
+D => inst25.IN1
+D => inst30.IN0
+D => test2.IN1
+F1 <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+F0 <= inst37.DB_MAX_OUTPUT_PORT_TYPE
+
+
