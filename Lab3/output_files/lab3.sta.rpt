@@ -1,13 +1,13 @@
-Timing Analyzer report for lab3
-Mon Sep 25 10:58:08 2023
-Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+TimeQuest Timing Analyzer report for lab3
+Fri Sep 29 15:04:21 2023
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
 ---------------------
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Timing Analyzer Summary
+  2. TimeQuest Timing Analyzer Summary
   3. Parallel Compilation
   4. Clocks
   5. Slow 1100mV 85C Model Fmax Summary
@@ -17,76 +17,81 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   9. Slow 1100mV 85C Model Recovery Summary
  10. Slow 1100mV 85C Model Removal Summary
  11. Slow 1100mV 85C Model Minimum Pulse Width Summary
- 12. Slow 1100mV 85C Model Metastability Summary
- 13. Slow 1100mV 0C Model Fmax Summary
- 14. Slow 1100mV 0C Model Setup Summary
- 15. Slow 1100mV 0C Model Hold Summary
- 16. Slow 1100mV 0C Model Recovery Summary
- 17. Slow 1100mV 0C Model Removal Summary
- 18. Slow 1100mV 0C Model Minimum Pulse Width Summary
- 19. Slow 1100mV 0C Model Metastability Summary
- 20. Fast 1100mV 85C Model Setup Summary
- 21. Fast 1100mV 85C Model Hold Summary
- 22. Fast 1100mV 85C Model Recovery Summary
- 23. Fast 1100mV 85C Model Removal Summary
- 24. Fast 1100mV 85C Model Minimum Pulse Width Summary
- 25. Fast 1100mV 85C Model Metastability Summary
- 26. Fast 1100mV 0C Model Setup Summary
- 27. Fast 1100mV 0C Model Hold Summary
- 28. Fast 1100mV 0C Model Recovery Summary
- 29. Fast 1100mV 0C Model Removal Summary
- 30. Fast 1100mV 0C Model Minimum Pulse Width Summary
- 31. Fast 1100mV 0C Model Metastability Summary
- 32. Multicorner Timing Analysis Summary
- 33. Board Trace Model Assignments
- 34. Input Transition Times
- 35. Signal Integrity Metrics (Slow 1100mv 0c Model)
- 36. Signal Integrity Metrics (Slow 1100mv 85c Model)
- 37. Signal Integrity Metrics (Fast 1100mv 0c Model)
- 38. Signal Integrity Metrics (Fast 1100mv 85c Model)
- 39. Clock Transfers
- 40. Report TCCS
- 41. Report RSKM
- 42. Unconstrained Paths Summary
- 43. Unconstrained Input Ports
- 44. Unconstrained Output Ports
- 45. Unconstrained Input Ports
- 46. Unconstrained Output Ports
- 47. Timing Analyzer Messages
+ 12. Propagation Delay
+ 13. Minimum Propagation Delay
+ 14. Slow 1100mV 85C Model Metastability Report
+ 15. Slow 1100mV 0C Model Fmax Summary
+ 16. Slow 1100mV 0C Model Setup Summary
+ 17. Slow 1100mV 0C Model Hold Summary
+ 18. Slow 1100mV 0C Model Recovery Summary
+ 19. Slow 1100mV 0C Model Removal Summary
+ 20. Slow 1100mV 0C Model Minimum Pulse Width Summary
+ 21. Propagation Delay
+ 22. Minimum Propagation Delay
+ 23. Slow 1100mV 0C Model Metastability Report
+ 24. Fast 1100mV 85C Model Setup Summary
+ 25. Fast 1100mV 85C Model Hold Summary
+ 26. Fast 1100mV 85C Model Recovery Summary
+ 27. Fast 1100mV 85C Model Removal Summary
+ 28. Fast 1100mV 85C Model Minimum Pulse Width Summary
+ 29. Propagation Delay
+ 30. Minimum Propagation Delay
+ 31. Fast 1100mV 85C Model Metastability Report
+ 32. Fast 1100mV 0C Model Setup Summary
+ 33. Fast 1100mV 0C Model Hold Summary
+ 34. Fast 1100mV 0C Model Recovery Summary
+ 35. Fast 1100mV 0C Model Removal Summary
+ 36. Fast 1100mV 0C Model Minimum Pulse Width Summary
+ 37. Propagation Delay
+ 38. Minimum Propagation Delay
+ 39. Fast 1100mV 0C Model Metastability Report
+ 40. Multicorner Timing Analysis Summary
+ 41. Propagation Delay
+ 42. Minimum Propagation Delay
+ 43. Board Trace Model Assignments
+ 44. Input Transition Times
+ 45. Signal Integrity Metrics (Slow 1100mv 0c Model)
+ 46. Signal Integrity Metrics (Slow 1100mv 85c Model)
+ 47. Signal Integrity Metrics (Fast 1100mv 0c Model)
+ 48. Signal Integrity Metrics (Fast 1100mv 85c Model)
+ 49. Clock Transfers
+ 50. Report TCCS
+ 51. Report RSKM
+ 52. Unconstrained Paths
+ 53. TimeQuest Timing Analyzer Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2018  Intel Corporation. All rights reserved.
-Your use of Intel Corporation's design tools, logic functions 
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Intel Program License 
-Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel FPGA IP License Agreement, or other applicable license
-agreement, including, without limitation, that your use is for
-the sole purpose of programming logic devices manufactured by
-Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
 
 
 
-+-----------------------------------------------------------------------------+
-; Timing Analyzer Summary                                                     ;
-+-----------------------+-----------------------------------------------------+
-; Quartus Prime Version ; Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
-; Timing Analyzer       ; Legacy Timing Analyzer                              ;
-; Revision Name         ; lab3                                                ;
-; Device Family         ; Cyclone V                                           ;
-; Device Name           ; 5CEBA4F23C7                                         ;
-; Timing Models         ; Final                                               ;
-; Delay Model           ; Combined                                            ;
-; Rise/Fall Delays      ; Enabled                                             ;
-+-----------------------+-----------------------------------------------------+
++-------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                       ;
++--------------------+----------------------------------------------------+
+; Quartus II Version ; Version 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name      ; lab3                                               ;
+; Device Family      ; Cyclone V                                          ;
+; Device Name        ; 5CEBA4F23C7                                        ;
+; Timing Models      ; Final                                              ;
+; Delay Model        ; Combined                                           ;
+; Rise/Fall Delays   ; Enabled                                            ;
++--------------------+----------------------------------------------------+
 
 
 +------------------------------------------+
@@ -95,15 +100,14 @@ refer to the applicable agreement for further details.
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
 ; Number detected on machine ; 16          ;
-; Maximum allowed            ; 8           ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.01        ;
-; Maximum used               ; 8           ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.3%      ;
-;     Processors 3-8         ;   0.1%      ;
+;     Processors 2-16        ; < 0.1%      ;
 +----------------------------+-------------+
 
 
@@ -155,9 +159,47 @@ No paths to report.
 No paths to report.
 
 
------------------------------------------------
-; Slow 1100mV 85C Model Metastability Summary ;
------------------------------------------------
++--------------------------------------------------------------+
+; Propagation Delay                                            ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; A          ; F0          ; 9.990  ; 10.982 ; 10.286 ; 11.256 ;
+; A          ; F1          ;        ; 9.320  ; 9.226  ;        ;
+; A          ; F2          ; 8.921  ;        ;        ; 9.572  ;
+; B          ; F0          ; 10.888 ; 11.870 ; 11.193 ; 12.185 ;
+; B          ; F1          ; 9.698  ; 10.162 ; 10.063 ; 10.480 ;
+; B          ; F2          ; 9.821  ;        ;        ; 10.508 ;
+; C          ; F0          ; 10.579 ; 11.574 ; 10.924 ; 11.906 ;
+; C          ; F1          ; 9.243  ; 9.675  ; 9.528  ; 9.915  ;
+; C          ; F2          ;        ; 9.896  ; 9.856  ;        ;
+; D          ; F0          ; 10.655 ; 11.703 ; 10.954 ; 12.060 ;
+; D          ; F2          ;        ; 9.850  ; 9.802  ;        ;
++------------+-------------+--------+--------+--------+--------+
+
+
++-------------------------------------------------------------+
+; Minimum Propagation Delay                                   ;
++------------+-------------+-------+--------+--------+--------+
+; Input Port ; Output Port ; RR    ; RF     ; FR     ; FF     ;
++------------+-------------+-------+--------+--------+--------+
+; A          ; F0          ; 9.023 ; 9.643  ; 9.243  ; 9.848  ;
+; A          ; F1          ;       ; 8.448  ; 8.384  ;        ;
+; A          ; F2          ; 8.145 ;        ;        ; 8.623  ;
+; B          ; F0          ; 9.812 ; 10.452 ; 10.023 ; 10.656 ;
+; B          ; F1          ; 8.786 ; 9.144  ; 9.068  ; 9.377  ;
+; B          ; F2          ; 8.924 ;        ;        ; 9.426  ;
+; C          ; F0          ; 9.531 ; 10.172 ; 9.797  ; 10.433 ;
+; C          ; F1          ; 8.414 ; 8.782  ; 8.655  ; 8.968  ;
+; C          ; F2          ;       ; 8.941  ; 8.909  ;        ;
+; D          ; F0          ; 9.630 ; 10.227 ; 9.836  ; 10.479 ;
+; D          ; F2          ;       ; 8.938  ; 8.842  ;        ;
++------------+-------------+-------+--------+--------+--------+
+
+
+----------------------------------------------
+; Slow 1100mV 85C Model Metastability Report ;
+----------------------------------------------
 No synchronizer chains to report.
 
 
@@ -197,9 +239,47 @@ No paths to report.
 No paths to report.
 
 
-----------------------------------------------
-; Slow 1100mV 0C Model Metastability Summary ;
-----------------------------------------------
++--------------------------------------------------------------+
+; Propagation Delay                                            ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; A          ; F0          ; 9.764  ; 10.856 ; 10.095 ; 11.161 ;
+; A          ; F1          ;        ; 9.122  ; 8.974  ;        ;
+; A          ; F2          ; 8.616  ;        ;        ; 9.364  ;
+; B          ; F0          ; 10.765 ; 11.843 ; 11.098 ; 12.189 ;
+; B          ; F1          ; 9.478  ; 10.035 ; 9.811  ; 10.402 ;
+; B          ; F2          ; 9.611  ;        ;        ; 10.396 ;
+; C          ; F0          ; 10.441 ; 11.536 ; 10.817 ; 11.895 ;
+; C          ; F1          ; 8.985  ; 9.511  ; 9.297  ; 9.773  ;
+; C          ; F2          ;        ; 9.741  ; 9.662  ;        ;
+; D          ; F0          ; 10.516 ; 11.669 ; 10.851 ; 12.076 ;
+; D          ; F2          ;        ; 9.678  ; 9.537  ;        ;
++------------+-------------+--------+--------+--------+--------+
+
+
++------------------------------------------------------------+
+; Minimum Propagation Delay                                  ;
++------------+-------------+-------+--------+-------+--------+
+; Input Port ; Output Port ; RR    ; RF     ; FR    ; FF     ;
++------------+-------------+-------+--------+-------+--------+
+; A          ; F0          ; 8.798 ; 9.522  ; 9.046 ; 9.752  ;
+; A          ; F1          ;       ; 8.259  ; 8.129 ;        ;
+; A          ; F2          ; 7.843 ;        ;       ; 8.419  ;
+; B          ; F0          ; 9.679 ; 10.426 ; 9.910 ; 10.650 ;
+; B          ; F1          ; 8.548 ; 9.024  ; 8.878 ; 9.230  ;
+; B          ; F2          ; 8.707 ;        ;       ; 9.310  ;
+; C          ; F0          ; 9.387 ; 10.133 ; 9.677 ; 10.419 ;
+; C          ; F1          ; 8.160 ; 8.629  ; 8.427 ; 8.834  ;
+; C          ; F2          ;       ; 8.794  ; 8.705 ;        ;
+; D          ; F0          ; 9.490 ; 10.189 ; 9.728 ; 10.479 ;
+; D          ; F2          ;       ; 8.779  ; 8.590 ;        ;
++------------+-------------+-------+--------+-------+--------+
+
+
+---------------------------------------------
+; Slow 1100mV 0C Model Metastability Report ;
+---------------------------------------------
 No synchronizer chains to report.
 
 
@@ -233,9 +313,47 @@ No paths to report.
 No paths to report.
 
 
------------------------------------------------
-; Fast 1100mV 85C Model Metastability Summary ;
------------------------------------------------
++----------------------------------------------------------+
+; Propagation Delay                                        ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; A          ; F0          ; 5.581 ; 6.475 ; 6.172 ; 7.063 ;
+; A          ; F1          ;       ; 5.224 ; 5.383 ;       ;
+; A          ; F2          ; 4.793 ;       ;       ; 5.811 ;
+; B          ; F0          ; 5.988 ; 6.887 ; 6.624 ; 7.526 ;
+; B          ; F1          ; 5.172 ; 5.652 ; 5.815 ; 6.273 ;
+; B          ; F2          ; 5.203 ;       ;       ; 6.279 ;
+; C          ; F0          ; 5.854 ; 6.756 ; 6.495 ; 7.395 ;
+; C          ; F1          ; 4.986 ; 5.430 ; 5.594 ; 6.025 ;
+; C          ; F2          ;       ; 5.509 ; 5.710 ;       ;
+; D          ; F0          ; 5.905 ; 6.824 ; 6.521 ; 7.464 ;
+; D          ; F2          ;       ; 5.511 ; 5.696 ;       ;
++------------+-------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------+
+; Minimum Propagation Delay                                ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; A          ; F0          ; 5.092 ; 5.735 ; 5.630 ; 6.270 ;
+; A          ; F1          ;       ; 4.814 ; 4.980 ;       ;
+; A          ; F2          ; 4.436 ;       ;       ; 5.342 ;
+; B          ; F0          ; 5.467 ; 6.121 ; 6.032 ; 6.684 ;
+; B          ; F1          ; 4.786 ; 5.166 ; 5.360 ; 5.737 ;
+; B          ; F2          ; 4.808 ;       ;       ; 5.756 ;
+; C          ; F0          ; 5.342 ; 5.996 ; 5.930 ; 6.582 ;
+; C          ; F1          ; 4.612 ; 5.016 ; 5.180 ; 5.563 ;
+; C          ; F2          ;       ; 5.068 ; 5.271 ;       ;
+; D          ; F0          ; 5.397 ; 6.033 ; 5.950 ; 6.603 ;
+; D          ; F2          ;       ; 5.088 ; 5.243 ;       ;
++------------+-------------+-------+-------+-------+-------+
+
+
+----------------------------------------------
+; Fast 1100mV 85C Model Metastability Report ;
+----------------------------------------------
 No synchronizer chains to report.
 
 
@@ -269,9 +387,47 @@ No paths to report.
 No paths to report.
 
 
-----------------------------------------------
-; Fast 1100mV 0C Model Metastability Summary ;
-----------------------------------------------
++----------------------------------------------------------+
+; Propagation Delay                                        ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; A          ; F0          ; 5.343 ; 6.081 ; 5.928 ; 6.660 ;
+; A          ; F1          ;       ; 4.878 ; 5.096 ;       ;
+; A          ; F2          ; 4.491 ;       ;       ; 5.452 ;
+; B          ; F0          ; 5.756 ; 6.496 ; 6.373 ; 7.116 ;
+; B          ; F1          ; 4.895 ; 5.301 ; 5.508 ; 5.911 ;
+; B          ; F2          ; 4.905 ;       ;       ; 5.912 ;
+; C          ; F0          ; 5.626 ; 6.369 ; 6.243 ; 6.984 ;
+; C          ; F1          ; 4.705 ; 5.083 ; 5.296 ; 5.659 ;
+; C          ; F2          ;       ; 5.165 ; 5.392 ;       ;
+; D          ; F0          ; 5.682 ; 6.444 ; 6.282 ; 7.068 ;
+; D          ; F2          ;       ; 5.167 ; 5.375 ;       ;
++------------+-------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------+
+; Minimum Propagation Delay                                ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; A          ; F0          ; 4.864 ; 5.395 ; 5.398 ; 5.925 ;
+; A          ; F1          ;       ; 4.487 ; 4.709 ;       ;
+; A          ; F2          ; 4.149 ;       ;       ; 5.007 ;
+; B          ; F0          ; 5.245 ; 5.786 ; 5.796 ; 6.334 ;
+; B          ; F1          ; 4.514 ; 4.839 ; 5.084 ; 5.383 ;
+; B          ; F2          ; 4.526 ;       ;       ; 5.417 ;
+; C          ; F0          ; 5.123 ; 5.663 ; 5.691 ; 6.229 ;
+; C          ; F1          ; 4.345 ; 4.688 ; 4.897 ; 5.217 ;
+; C          ; F2          ;       ; 4.746 ; 4.972 ;       ;
+; D          ; F0          ; 5.184 ; 5.705 ; 5.725 ; 6.266 ;
+; D          ; F2          ;       ; 4.765 ; 4.946 ;       ;
++------------+-------------+-------+-------+-------+-------+
+
+
+---------------------------------------------
+; Fast 1100mV 0C Model Metastability Report ;
+---------------------------------------------
 No synchronizer chains to report.
 
 
@@ -283,6 +439,44 @@ No synchronizer chains to report.
 ; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
 ; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
 +------------------+-------+------+----------+---------+---------------------+
+
+
++--------------------------------------------------------------+
+; Propagation Delay                                            ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; A          ; F0          ; 9.990  ; 10.982 ; 10.286 ; 11.256 ;
+; A          ; F1          ;        ; 9.320  ; 9.226  ;        ;
+; A          ; F2          ; 8.921  ;        ;        ; 9.572  ;
+; B          ; F0          ; 10.888 ; 11.870 ; 11.193 ; 12.189 ;
+; B          ; F1          ; 9.698  ; 10.162 ; 10.063 ; 10.480 ;
+; B          ; F2          ; 9.821  ;        ;        ; 10.508 ;
+; C          ; F0          ; 10.579 ; 11.574 ; 10.924 ; 11.906 ;
+; C          ; F1          ; 9.243  ; 9.675  ; 9.528  ; 9.915  ;
+; C          ; F2          ;        ; 9.896  ; 9.856  ;        ;
+; D          ; F0          ; 10.655 ; 11.703 ; 10.954 ; 12.076 ;
+; D          ; F2          ;        ; 9.850  ; 9.802  ;        ;
++------------+-------------+--------+--------+--------+--------+
+
+
++----------------------------------------------------------+
+; Minimum Propagation Delay                                ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; A          ; F0          ; 4.864 ; 5.395 ; 5.398 ; 5.925 ;
+; A          ; F1          ;       ; 4.487 ; 4.709 ;       ;
+; A          ; F2          ; 4.149 ;       ;       ; 5.007 ;
+; B          ; F0          ; 5.245 ; 5.786 ; 5.796 ; 6.334 ;
+; B          ; F1          ; 4.514 ; 4.839 ; 5.084 ; 5.383 ;
+; B          ; F2          ; 4.526 ;       ;       ; 5.417 ;
+; C          ; F0          ; 5.123 ; 5.663 ; 5.691 ; 6.229 ;
+; C          ; F1          ; 4.345 ; 4.688 ; 4.897 ; 5.217 ;
+; C          ; F2          ;       ; 4.746 ; 4.972 ;       ;
+; D          ; F0          ; 5.184 ; 5.705 ; 5.725 ; 6.266 ;
+; D          ; F2          ;       ; 4.765 ; 4.946 ;       ;
++------------+-------------+-------+-------+-------+-------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -371,7 +565,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 
 
 +------------------------------------------------+
-; Unconstrained Paths Summary                    ;
+; Unconstrained Paths                            ;
 +---------------------------------+-------+------+
 ; Property                        ; Setup ; Hold ;
 +---------------------------------+-------+------+
@@ -384,72 +578,25 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +---------------------------------+-------+------+
 
 
-+---------------------------------------------------------------------------------------------------+
-; Unconstrained Input Ports                                                                         ;
-+------------+--------------------------------------------------------------------------------------+
-; Input Port ; Comment                                                                              ;
-+------------+--------------------------------------------------------------------------------------+
-; A          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; B          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; C          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; D          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-+------------+--------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------+
-; Unconstrained Output Ports                                                                          ;
-+-------------+---------------------------------------------------------------------------------------+
-; Output Port ; Comment                                                                               ;
-+-------------+---------------------------------------------------------------------------------------+
-; F0          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; F1          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; F2          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-+-------------+---------------------------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------+
-; Unconstrained Input Ports                                                                         ;
-+------------+--------------------------------------------------------------------------------------+
-; Input Port ; Comment                                                                              ;
-+------------+--------------------------------------------------------------------------------------+
-; A          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; B          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; C          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; D          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-+------------+--------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------+
-; Unconstrained Output Ports                                                                          ;
-+-------------+---------------------------------------------------------------------------------------+
-; Output Port ; Comment                                                                               ;
-+-------------+---------------------------------------------------------------------------------------+
-; F0          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; F1          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; F2          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-+-------------+---------------------------------------------------------------------------------------+
-
-
-+--------------------------+
-; Timing Analyzer Messages ;
-+--------------------------+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Timing Analyzer
-    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Sep 25 10:57:52 2023
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Fri Sep 29 15:04:17 2023
 Info: Command: quartus_sta lab3 -c lab3
 Info: qsta_default_script.tcl version: #1
-Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
-Critical Warning (332012): Synopsys Design Constraints File file not found: 'lab3.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'lab3.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
 Warning (332068): No clocks defined in design.
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
-Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info (332159): No clocks to report
 Info: Analyzing Slow 1100mV 85C Model
 Info (332140): No fmax paths to report
@@ -495,10 +642,10 @@ Info (332140): No Removal paths to report
 Info (332140): No Minimum Pulse Width paths to report
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus Prime Timing Analyzer was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 5099 megabytes
-    Info: Processing ended: Mon Sep 25 10:58:08 2023
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:03
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 5032 megabytes
+    Info: Processing ended: Fri Sep 29 15:04:21 2023
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:04
 
 

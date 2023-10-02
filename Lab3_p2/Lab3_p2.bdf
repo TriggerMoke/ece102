@@ -4,19 +4,19 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 2018  Intel Corporation. All rights reserved.
-Your use of Intel Corporation's design tools, logic functions 
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Intel Program License 
-Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel FPGA IP License Agreement, or other applicable license
-agreement, including, without limitation, that your use is for
-the sole purpose of programming logic devices manufactured by
-Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
 */
 (header "graphic" (version "1.4"))
 (pin
@@ -41,7 +41,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 120 16 136 184)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "X" (rect 4 5 21 12)(font "Intel Clear" )(vertical))
+	(text "X" (rect 4 5 15 10)(font "Intel Clear" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -59,7 +59,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 184 16 200 184)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "Y" (rect 4 5 21 12)(font "Intel Clear" )(vertical))
+	(text "Y" (rect 4 5 15 12)(font "Intel Clear" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -77,7 +77,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 248 16 264 184)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "Z" (rect 4 5 21 10)(font "Intel Clear" )(vertical))
+	(text "Z" (rect 4 5 15 10)(font "Intel Clear" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -112,7 +112,7 @@ refer to the applicable agreement for further details.
 	(output)
 	(rect 392 384 568 400)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "f14" (rect 90 0 105 17)(font "Intel Clear" ))
+	(text "f14" (rect 90 0 105 11)(font "Intel Clear" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -129,7 +129,7 @@ refer to the applicable agreement for further details.
 	(output)
 	(rect 392 472 568 488)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "f13" (rect 90 0 105 17)(font "Intel Clear" ))
+	(text "f13" (rect 90 0 105 11)(font "Intel Clear" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -146,7 +146,7 @@ refer to the applicable agreement for further details.
 	(output)
 	(rect 392 560 568 576)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "f12" (rect 90 0 105 17)(font "Intel Clear" ))
+	(text "f12" (rect 90 0 105 11)(font "Intel Clear" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -163,7 +163,7 @@ refer to the applicable agreement for further details.
 	(output)
 	(rect 392 648 568 664)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "f11" (rect 90 0 105 17)(font "Intel Clear" ))
+	(text "f11" (rect 90 0 105 11)(font "Intel Clear" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -180,7 +180,7 @@ refer to the applicable agreement for further details.
 	(output)
 	(rect 392 736 568 752)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "f10" (rect 90 0 105 17)(font "Intel Clear" ))
+	(text "f10" (rect 90 0 105 11)(font "Intel Clear" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -197,7 +197,7 @@ refer to the applicable agreement for further details.
 	(output)
 	(rect 392 824 568 840)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "f9" (rect 90 0 99 17)(font "Intel Clear" ))
+	(text "f9" (rect 90 0 99 11)(font "Intel Clear" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -214,7 +214,7 @@ refer to the applicable agreement for further details.
 	(output)
 	(rect 392 912 568 928)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "f8" (rect 90 0 99 17)(font "Intel Clear" ))
+	(text "f8" (rect 90 0 99 11)(font "Intel Clear" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -231,7 +231,7 @@ refer to the applicable agreement for further details.
 	(output)
 	(rect 392 1000 568 1016)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "f7" (rect 90 0 99 17)(font "Intel Clear" ))
+	(text "f7" (rect 90 0 99 11)(font "Intel Clear" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -248,7 +248,7 @@ refer to the applicable agreement for further details.
 	(output)
 	(rect 392 1088 568 1104)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "f6" (rect 90 0 99 17)(font "Intel Clear" ))
+	(text "f6" (rect 90 0 99 11)(font "Intel Clear" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -265,7 +265,7 @@ refer to the applicable agreement for further details.
 	(output)
 	(rect 392 1176 568 1192)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "f5" (rect 90 0 99 17)(font "Intel Clear" ))
+	(text "f5" (rect 90 0 99 11)(font "Intel Clear" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -282,7 +282,7 @@ refer to the applicable agreement for further details.
 	(output)
 	(rect 392 1264 568 1280)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "f4" (rect 90 0 99 17)(font "Intel Clear" ))
+	(text "f4" (rect 90 0 99 11)(font "Intel Clear" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -299,7 +299,7 @@ refer to the applicable agreement for further details.
 	(output)
 	(rect 392 1352 568 1368)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "f3" (rect 90 0 99 17)(font "Intel Clear" ))
+	(text "f3" (rect 90 0 99 11)(font "Intel Clear" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -316,7 +316,7 @@ refer to the applicable agreement for further details.
 	(output)
 	(rect 392 1440 568 1456)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "f2" (rect 90 0 99 17)(font "Intel Clear" ))
+	(text "f2" (rect 90 0 99 11)(font "Intel Clear" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -333,7 +333,7 @@ refer to the applicable agreement for further details.
 	(output)
 	(rect 392 1528 568 1544)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "f1" (rect 90 0 99 17)(font "Intel Clear" ))
+	(text "f1" (rect 90 0 99 11)(font "Intel Clear" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -350,7 +350,7 @@ refer to the applicable agreement for further details.
 	(output)
 	(rect 392 1616 568 1632)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "f0" (rect 90 0 99 17)(font "Intel Clear" ))
+	(text "f0" (rect 90 0 99 11)(font "Intel Clear" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -392,7 +392,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 144 200 176 248)
 	(text "NOT" (rect 22 1 32 21)(font "Arial" (font_size 6))(vertical))
-	(text "inst1" (rect -6 3 11 25)(font "Intel Clear" )(vertical))
+	(text "inst1" (rect -6 3 5 25)(font "Intel Clear" )(vertical))
 	(port
 		(pt 16 0)
 		(input)
@@ -418,7 +418,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 208 200 240 248)
 	(text "NOT" (rect 22 1 32 21)(font "Arial" (font_size 6))(vertical))
-	(text "inst2" (rect -6 3 11 25)(font "Intel Clear" )(vertical))
+	(text "inst2" (rect -6 3 5 25)(font "Intel Clear" )(vertical))
 	(port
 		(pt 16 0)
 		(input)
@@ -444,7 +444,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 272 200 304 248)
 	(text "NOT" (rect 22 1 32 21)(font "Arial" (font_size 6))(vertical))
-	(text "inst3" (rect -6 3 11 25)(font "Intel Clear" )(vertical))
+	(text "inst3" (rect -6 3 5 25)(font "Intel Clear" )(vertical))
 	(port
 		(pt 16 0)
 		(input)
@@ -470,7 +470,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 320 264 384 344)
 	(text "AND4" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst5" (rect 3 69 25 86)(font "Intel Clear" ))
+	(text "inst5" (rect 3 69 25 80)(font "Intel Clear" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -517,7 +517,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 320 352 384 432)
 	(text "AND4" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst6" (rect 3 69 25 86)(font "Intel Clear" ))
+	(text "inst6" (rect 3 69 25 80)(font "Intel Clear" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -564,7 +564,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 320 440 384 520)
 	(text "AND4" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst7" (rect 3 69 25 86)(font "Intel Clear" ))
+	(text "inst7" (rect 3 69 25 80)(font "Intel Clear" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -611,7 +611,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 320 528 384 608)
 	(text "AND4" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst8" (rect 3 69 25 86)(font "Intel Clear" ))
+	(text "inst8" (rect 3 69 25 80)(font "Intel Clear" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -658,7 +658,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 320 616 384 696)
 	(text "AND4" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst9" (rect 3 69 25 86)(font "Intel Clear" ))
+	(text "inst9" (rect 3 69 25 80)(font "Intel Clear" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -705,7 +705,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 320 704 384 784)
 	(text "AND4" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst10" (rect 3 69 31 86)(font "Intel Clear" ))
+	(text "inst10" (rect 3 69 31 80)(font "Intel Clear" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -752,7 +752,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 320 792 384 872)
 	(text "AND4" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst11" (rect 3 69 31 86)(font "Intel Clear" ))
+	(text "inst11" (rect 3 69 31 80)(font "Intel Clear" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -799,7 +799,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 320 880 384 960)
 	(text "AND4" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst12" (rect 3 69 31 86)(font "Intel Clear" ))
+	(text "inst12" (rect 3 69 31 80)(font "Intel Clear" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -846,7 +846,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 320 968 384 1048)
 	(text "AND4" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst13" (rect 3 69 31 86)(font "Intel Clear" ))
+	(text "inst13" (rect 3 69 31 80)(font "Intel Clear" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -893,7 +893,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 320 1056 384 1136)
 	(text "AND4" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst14" (rect 3 69 31 86)(font "Intel Clear" ))
+	(text "inst14" (rect 3 69 31 80)(font "Intel Clear" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -940,7 +940,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 320 1144 384 1224)
 	(text "AND4" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst15" (rect 3 69 31 86)(font "Intel Clear" ))
+	(text "inst15" (rect 3 69 31 80)(font "Intel Clear" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -987,7 +987,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 320 1232 384 1312)
 	(text "AND4" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst16" (rect 3 69 31 86)(font "Intel Clear" ))
+	(text "inst16" (rect 3 69 31 80)(font "Intel Clear" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -1034,7 +1034,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 320 1320 384 1400)
 	(text "AND4" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst17" (rect 3 69 31 86)(font "Intel Clear" ))
+	(text "inst17" (rect 3 69 31 80)(font "Intel Clear" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -1081,7 +1081,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 320 1408 384 1488)
 	(text "AND4" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst18" (rect 3 69 31 86)(font "Intel Clear" ))
+	(text "inst18" (rect 3 69 31 80)(font "Intel Clear" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -1128,7 +1128,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 320 1496 384 1576)
 	(text "AND4" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst19" (rect 3 69 31 86)(font "Intel Clear" ))
+	(text "inst19" (rect 3 69 31 80)(font "Intel Clear" ))
 	(port
 		(pt 0 16)
 		(input)
@@ -1175,7 +1175,7 @@ refer to the applicable agreement for further details.
 (symbol
 	(rect 320 1584 384 1664)
 	(text "AND4" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst20" (rect 3 69 31 86)(font "Intel Clear" ))
+	(text "inst20" (rect 3 69 31 80)(font "Intel Clear" ))
 	(port
 		(pt 0 16)
 		(input)
