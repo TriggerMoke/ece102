@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab5
-Wed Oct 04 23:53:25 2023
+Sun Oct 08 22:26:21 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                             ;
 +-----------------------------+--------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Wed Oct 04 23:53:25 2023          ;
+; Analysis & Synthesis Status ; Failed - Sun Oct 08 22:26:21 2023          ;
 ; Quartus II 64-Bit Version   ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name               ; lab5                                       ;
 ; Top-level Entity Name       ; lab5                                       ;
@@ -161,7 +161,7 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Wed Oct 04 23:53:24 2023
+    Info: Processing started: Sun Oct 08 22:26:21 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab5 -c lab5
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file lab4.bdf
@@ -172,17 +172,18 @@ Info (12021): Found 1 design units, including 1 entities, in source file lab5.bd
     Info (12023): Found entity 1: lab5
 Info (12021): Found 1 design units, including 1 entities, in source file multiplier.bdf
     Info (12023): Found entity 1: multiplier
+Info (12021): Found 1 design units, including 1 entities, in source file tsba.bdf
+    Info (12023): Found entity 1: TSBA
 Info (12127): Elaborating entity "lab5" for the top level hierarchy
-Warning (275085): Found inconsistent dimensions for element "ctrl"
-Warning (275080): Converted elements in bus name "ctrl" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "ctrl[2..0]" to "ctrl2..0"
-Error (275058): Signal "B[3..0]" drives an input pin
-Error (275058): Signal "A[3..0]" drives an input pin
+Error (275024): Width mismatch in port "A[3..0]" of instance "inst1" and type multiplier -- source is ""A[7..0]""
+Error (275024): Width mismatch in port "B[3..0]" of instance "inst1" and type multiplier -- source is ""B[7..0]""
+Error (275023): Width mismatch in B[7..0] -- source is ""B[3..0]""
+Error (275023): Width mismatch in A[7..0] -- source is ""A[3..0]""
 Error (12153): Can't elaborate top-level user hierarchy
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 3 errors, 3 warnings
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 5 errors, 0 warnings
     Error: Peak virtual memory: 4651 megabytes
-    Error: Processing ended: Wed Oct 04 23:53:25 2023
-    Error: Elapsed time: 00:00:01
+    Error: Processing ended: Sun Oct 08 22:26:21 2023
+    Error: Elapsed time: 00:00:00
     Error: Total CPU time (on all processors): 00:00:01
 
 
