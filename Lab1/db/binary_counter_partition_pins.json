@@ -1,0 +1,41 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "QA",
+					"strict" : false
+				},
+				{
+					"name" : "QB",
+					"strict" : false
+				},
+				{
+					"name" : "QC",
+					"strict" : false
+				},
+				{
+					"name" : "QD",
+					"strict" : false
+				},
+				{
+					"name" : "COUT",
+					"strict" : false
+				},
+				{
+					"name" : "DN_UP",
+					"strict" : false
+				},
+				{
+					"name" : "LDN",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

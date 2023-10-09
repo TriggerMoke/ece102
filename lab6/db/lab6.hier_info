@@ -1,0 +1,69 @@
+|lab6
+a <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+input[0] => Lab3_p2:inst.Z
+input[1] => Lab3_p2:inst.Y
+input[2] => Lab3_p2:inst.X
+input[3] => Lab3_p2:inst.W
+b <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+c <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+d <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+e <= inst25.DB_MAX_OUTPUT_PORT_TYPE
+f <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+g <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6|Lab3_p2:inst
+f15 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+W => inst5.IN0
+W => inst6.IN0
+W => inst7.IN0
+W => inst8.IN0
+W => inst9.IN0
+W => inst10.IN0
+W => inst11.IN0
+W => inst12.IN0
+W => inst.IN0
+X => inst5.IN1
+X => inst6.IN1
+X => inst7.IN1
+X => inst8.IN1
+X => inst1.IN0
+X => inst13.IN1
+X => inst14.IN1
+X => inst15.IN1
+X => inst16.IN1
+Y => inst5.IN2
+Y => inst6.IN2
+Y => inst2.IN0
+Y => inst9.IN2
+Y => inst10.IN2
+Y => inst13.IN2
+Y => inst14.IN2
+Y => inst17.IN2
+Y => inst18.IN2
+Z => inst5.IN3
+Z => inst3.IN0
+Z => inst7.IN3
+Z => inst9.IN3
+Z => inst11.IN3
+Z => inst13.IN3
+Z => inst15.IN3
+Z => inst17.IN3
+Z => inst19.IN3
+f14 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+f13 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+f12 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+f11 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+f10 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+f9 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+f8 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+f7 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+f6 <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+f5 <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+f4 <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+f3 <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+f2 <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+f1 <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+f0 <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+
+
