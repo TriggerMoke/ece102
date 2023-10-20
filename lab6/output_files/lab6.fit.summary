@@ -1,5 +1,5 @@
-Fitter Status : Successful - Sun Oct 08 20:28:56 2023
-Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Fitter Status : Successful - Mon Oct 09 09:29:27 2023
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : lab6
 Top-level Entity Name : lab6
 Family : Cyclone V
@@ -10,10 +10,11 @@ Total registers : 0
 Total pins : 11 / 224 ( 5 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 3,153,920 ( 0 % )
+Total RAM Blocks : 0 / 308 ( 0 % )
 Total DSP Blocks : 0 / 66 ( 0 % )
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0
 Total HSSI TX PCSs : 0
-Total HSSI TX Channels : 0
+Total HSSI PMA TX Serializers : 0
 Total PLLs : 0 / 4 ( 0 % )
 Total DLLs : 0 / 4 ( 0 % )

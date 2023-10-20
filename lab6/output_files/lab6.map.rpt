@@ -1,6 +1,6 @@
 Analysis & Synthesis report for lab6
-Sun Oct 08 20:28:44 2023
-Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Mon Oct 09 09:29:12 2023
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
 ---------------------
@@ -14,51 +14,52 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Elapsed Time Per Partition
- 10. Analysis & Synthesis Messages
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2013 Altera Corporation
-Your use of Altera Corporation's design tools, logic functions 
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Altera Program License 
-Subscription Agreement, Altera MegaCore Function License 
-Agreement, or other applicable license agreement, including, 
-without limitation, that your use is for the sole purpose of 
-programming logic devices manufactured by Altera and sold by 
-Altera or its authorized distributors.  Please refer to the 
-applicable agreement for further details.
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
 
 
 
-+------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                 ;
-+---------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Oct 08 20:28:44 2023      ;
-; Quartus II 64-Bit Version       ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
-; Revision Name                   ; lab6                                       ;
-; Top-level Entity Name           ; lab6                                       ;
-; Family                          ; Cyclone V                                  ;
-; Logic utilization (in ALMs)     ; N/A                                        ;
-; Total registers                 ; 0                                          ;
-; Total pins                      ; 11                                         ;
-; Total virtual pins              ; 0                                          ;
-; Total block memory bits         ; 0                                          ;
-; Total DSP Blocks                ; 0                                          ;
-; Total HSSI RX PCSs              ; 0                                          ;
-; Total HSSI PMA RX Deserializers ; 0                                          ;
-; Total HSSI TX PCSs              ; 0                                          ;
-; Total HSSI TX Channels          ; 0                                          ;
-; Total PLLs                      ; 0                                          ;
-; Total DLLs                      ; 0                                          ;
-+---------------------------------+--------------------------------------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Mon Oct 09 09:29:11 2023       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                   ; lab6                                        ;
+; Top-level Entity Name           ; lab6                                        ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 11                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -68,15 +69,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CEBA4F23C7        ;                    ;
 ; Top-level entity name                                                           ; lab6               ; lab6               ;
-; Family name                                                                     ; Cyclone V          ; Cyclone IV GX      ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
-; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
 ; Enable compact report table                                                     ; Off                ; Off                ;
 ; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
 ; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
 ; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
 ; Preserve fewer node names                                                       ; On                 ; On                 ;
-; Disable OpenCore Plus hardware evaluation                                       ; Off                ; Off                ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
 ; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
 ; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
 ; State Machine Processing                                                        ; Auto               ; Auto               ;
@@ -127,7 +128,7 @@ applicable agreement for further details.
 ; Report Connectivity Checks                                                      ; On                 ; On                 ;
 ; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
 ; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
-; PowerPlay Power Optimization                                                    ; Normal compilation ; Normal compilation ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
 ; HDL message level                                                               ; Level2             ; Level2             ;
 ; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
 ; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
@@ -143,8 +144,8 @@ applicable agreement for further details.
 ; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
 ; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
 ; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
-; Synthesis Seed                                                                  ; 1                  ; 1                  ;
 ; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
@@ -154,25 +155,24 @@ applicable agreement for further details.
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
 ; Number detected on machine ; 16          ;
-; Maximum allowed            ; 16          ;
+; Maximum allowed            ; 8           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                   ;
-+----------------------------------+-----------------+------------------------------------------+--------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path   ; Library ;
-+----------------------------------+-----------------+------------------------------------------+--------------------------------+---------+
-; lab6.bdf                         ; yes             ; User Block Diagram/Schematic File        ; D:/git/ece102/lab6/lab6.bdf    ;         ;
-; lab3_p2.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/git/ece102/lab6/lab3_p2.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------------+--------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                 ;
++----------------------------------+-----------------+------------------------------------------+------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path ; Library ;
++----------------------------------+-----------------+------------------------------------------+------------------------------+---------+
+; lab6.bdf                         ; yes             ; User Block Diagram/Schematic File        ; U:/ECE102/lab6/lab6.bdf      ;         ;
+; lab3_p2.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; U:/ECE102/lab6/lab3_p2.bdf   ;         ;
++----------------------------------+-----------------+------------------------------------------+------------------------------+---------+
 
 
 +--------------------------------------------------------------+
@@ -192,7 +192,9 @@ applicable agreement for further details.
 ; Dedicated logic registers                   ; 0              ;
 ;                                             ;                ;
 ; I/O pins                                    ; 11             ;
+;                                             ;                ;
 ; Total DSP Blocks                            ; 0              ;
+;                                             ;                ;
 ; Maximum fan-out node                        ; input[0]~input ;
 ; Maximum fan-out                             ; 7              ;
 ; Total fan-out                               ; 46             ;
@@ -200,13 +202,13 @@ applicable agreement for further details.
 +---------------------------------------------+----------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                       ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
-; |lab6                      ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 11   ; 0            ; |lab6               ; work         ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; |lab6                      ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 11   ; 0            ; |lab6               ; lab6        ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -225,6 +227,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_lcell_comb     ; 14                          ;
+;     normal            ; 14                          ;
+;         1 data inputs ; 7                           ;
+;         4 data inputs ; 7                           ;
+; boundary_port         ; 11                          ;
+;                       ;                             ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 2.00                        ;
++-----------------------+-----------------------------+
+
+
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
@@ -238,16 +256,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Sun Oct 08 20:28:43 2023
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Mon Oct 09 09:28:57 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab6 -c lab6
-Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file lab6.bdf
     Info (12023): Found entity 1: lab6
 Info (12127): Elaborating entity "lab6" for the top level hierarchy
 Warning (12125): Using design file lab3_p2.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: Lab3_p2
+    Info (12023): Found entity 1: lab3_p2
 Info (12128): Elaborating entity "Lab3_p2" for hierarchy "Lab3_p2:inst"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -256,10 +275,10 @@ Info (21057): Implemented 18 device resources after synthesis - the final resour
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 7 output pins
     Info (21061): Implemented 7 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4708 megabytes
-    Info: Processing ended: Sun Oct 08 20:28:44 2023
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4831 megabytes
+    Info: Processing ended: Mon Oct 09 09:29:12 2023
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:16
 
 

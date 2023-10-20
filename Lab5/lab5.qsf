@@ -56,5 +56,31 @@ set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name BDF_FILE TSBA.bdf
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_T12 -to A[3]
+set_location_assignment PIN_T13 -to A[2]
+set_location_assignment PIN_V13 -to A[1]
+set_location_assignment PIN_U13 -to A[0]
+set_location_assignment PIN_L2 -to addOrSub
+set_location_assignment PIN_L1 -to ctrlOut
+set_location_assignment PIN_W19 -to overflow
+set_location_assignment PIN_AA13 -to B[3]
+set_location_assignment PIN_AA14 -to B[2]
+set_location_assignment PIN_AB15 -to B[1]
+set_location_assignment PIN_AA15 -to B[0]
+set_location_assignment PIN_AB12 -to ctrl[1]
+set_location_assignment PIN_AB13 -to ctrl[0]
+set_location_assignment PIN_U1 -to S[7]
+set_location_assignment PIN_U2 -to S[6]
+set_location_assignment PIN_N1 -to S[5]
+set_location_assignment PIN_N2 -to S[4]
+set_location_assignment PIN_Y3 -to S[3]
+set_location_assignment PIN_W2 -to S[2]
+set_location_assignment PIN_AA1 -to S[1]
+set_location_assignment PIN_AA2 -to S[0]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "D:/git/ece102/Lab5/simulation/qsim/" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
