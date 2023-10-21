@@ -1,9 +1,9 @@
 |lab6
 a <= inst16.DB_MAX_OUTPUT_PORT_TYPE
-input[0] => Lab3_p2:inst.Z
-input[1] => Lab3_p2:inst.Y
-input[2] => Lab3_p2:inst.X
-input[3] => Lab3_p2:inst.W
+dat[0] => Lab3_p2:inst.Z
+dat[1] => Lab3_p2:inst.Y
+dat[2] => Lab3_p2:inst.X
+dat[3] => Lab3_p2:inst.W
 b <= inst21.DB_MAX_OUTPUT_PORT_TYPE
 c <= inst23.DB_MAX_OUTPUT_PORT_TYPE
 d <= inst24.DB_MAX_OUTPUT_PORT_TYPE

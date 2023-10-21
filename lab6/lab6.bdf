@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 352 184 368 352)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "input[3..0]" (rect 5 5 17 54)(font "Arial" )(vertical))
+	(text "dat[3..0]" (rect 6 5 18 47)(font "Arial" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -157,7 +157,7 @@ applicable agreement for further details.
 	(annotation_block (location)(rect 1096 1384 1160 1400))
 )
 (symbol
-	(rect 448 368 544 688)
+	(rect 424 368 520 688)
 	(text "Lab3_p2" (rect 5 0 54 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 304 25 316)(font "Arial" ))
 	(port
@@ -1304,6 +1304,23 @@ applicable agreement for further details.
 		(arc (pt 25 35)(pt 49 24)(rect -6 -27 57 36))
 	)
 )
+(symbol
+	(rect 472 336 504 368)
+	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
+	(text "inst1" (rect 3 21 26 33)(font "Arial" )(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(line (pt 16 8)(pt 16 0))
+	)
+	(drawing
+		(line (pt 8 8)(pt 16 16))
+		(line (pt 16 16)(pt 24 8))
+		(line (pt 8 8)(pt 24 8))
+	)
+)
 (connector
 	(pt 704 408)
 	(pt 720 408)
@@ -1369,46 +1386,6 @@ applicable agreement for further details.
 	(pt 720 928)
 )
 (connector
-	(pt 544 640)
-	(pt 552 640)
-)
-(connector
-	(pt 544 624)
-	(pt 560 624)
-)
-(connector
-	(pt 544 608)
-	(pt 568 608)
-)
-(connector
-	(pt 576 592)
-	(pt 544 592)
-)
-(connector
-	(pt 544 576)
-	(pt 584 576)
-)
-(connector
-	(pt 544 560)
-	(pt 592 560)
-)
-(connector
-	(pt 544 544)
-	(pt 600 544)
-)
-(connector
-	(pt 544 528)
-	(pt 608 528)
-)
-(connector
-	(pt 544 512)
-	(pt 616 512)
-)
-(connector
-	(pt 544 496)
-	(pt 624 496)
-)
-(connector
 	(pt 704 1248)
 	(pt 712 1248)
 )
@@ -1457,14 +1434,6 @@ applicable agreement for further details.
 	(pt 704 1328)
 )
 (connector
-	(pt 584 368)
-	(pt 584 576)
-)
-(connector
-	(pt 600 368)
-	(pt 600 544)
-)
-(connector
 	(pt 640 384)
 	(pt 552 384)
 )
@@ -1505,20 +1474,12 @@ applicable agreement for further details.
 	(pt 624 488)
 )
 (connector
-	(pt 624 488)
-	(pt 624 496)
-)
-(connector
 	(pt 640 480)
 	(pt 616 480)
 )
 (connector
 	(pt 616 368)
 	(pt 616 480)
-)
-(connector
-	(pt 616 480)
-	(pt 616 512)
 )
 (connector
 	(pt 640 472)
@@ -1529,20 +1490,12 @@ applicable agreement for further details.
 	(pt 608 472)
 )
 (connector
-	(pt 608 472)
-	(pt 608 528)
-)
-(connector
 	(pt 640 536)
 	(pt 552 536)
 )
 (connector
 	(pt 552 384)
 	(pt 552 536)
-)
-(connector
-	(pt 552 536)
-	(pt 552 640)
 )
 (connector
 	(pt 640 552)
@@ -1553,20 +1506,12 @@ applicable agreement for further details.
 	(pt 560 552)
 )
 (connector
-	(pt 560 552)
-	(pt 560 624)
-)
-(connector
 	(pt 640 568)
 	(pt 568 568)
 )
 (connector
 	(pt 568 400)
 	(pt 568 568)
-)
-(connector
-	(pt 568 568)
-	(pt 568 608)
 )
 (connector
 	(pt 640 584)
@@ -1577,15 +1522,7 @@ applicable agreement for further details.
 	(pt 576 584)
 )
 (connector
-	(pt 576 584)
-	(pt 576 592)
-)
-(connector
 	(pt 640 624)
-	(pt 584 624)
-)
-(connector
-	(pt 584 576)
 	(pt 584 624)
 )
 (connector
@@ -1618,10 +1555,6 @@ applicable agreement for further details.
 )
 (connector
 	(pt 640 824)
-	(pt 600 824)
-)
-(connector
-	(pt 600 544)
 	(pt 600 824)
 )
 (connector
@@ -1733,14 +1666,6 @@ applicable agreement for further details.
 	(pt 616 1400)
 )
 (connector
-	(pt 616 1240)
-	(pt 616 1400)
-)
-(connector
-	(pt 616 1400)
-	(pt 616 1408)
-)
-(connector
 	(pt 640 1392)
 	(pt 600 1392)
 )
@@ -1757,52 +1682,8 @@ applicable agreement for further details.
 	(pt 552 1152)
 )
 (connector
-	(pt 552 1152)
-	(pt 552 1408)
-)
-(connector
 	(pt 576 1320)
 	(pt 576 1408)
-)
-(connector
-	(pt 360 432)
-	(pt 360 448)
-	(bus)
-)
-(connector
-	(pt 360 352)
-	(pt 360 400)
-	(bus)
-)
-(connector
-	(text "input[3]" (rect 410 384 446 396)(font "Arial" ))
-	(pt 448 400)
-	(pt 360 400)
-)
-(connector
-	(text "input[2]" (rect 400 400 436 412)(font "Arial" ))
-	(pt 448 416)
-	(pt 360 416)
-)
-(connector
-	(pt 360 400)
-	(pt 360 416)
-	(bus)
-)
-(connector
-	(pt 360 416)
-	(pt 360 432)
-	(bus)
-)
-(connector
-	(text "input[1]" (rect 394 416 430 428)(font "Arial" ))
-	(pt 448 432)
-	(pt 360 432)
-)
-(connector
-	(text "input[0]" (rect 403 432 439 444)(font "Arial" ))
-	(pt 448 448)
-	(pt 360 448)
 )
 (connector
 	(pt 864 600)
@@ -1861,10 +1742,6 @@ applicable agreement for further details.
 	(pt 616 656)
 )
 (connector
-	(pt 616 512)
-	(pt 616 656)
-)
-(connector
 	(pt 616 656)
 	(pt 616 856)
 )
@@ -1873,19 +1750,11 @@ applicable agreement for further details.
 	(pt 608 640)
 )
 (connector
-	(pt 608 528)
-	(pt 608 640)
-)
-(connector
 	(pt 608 640)
 	(pt 608 840)
 )
 (connector
 	(pt 640 920)
-	(pt 568 920)
-)
-(connector
-	(pt 568 608)
 	(pt 568 920)
 )
 (connector
@@ -1929,14 +1798,6 @@ applicable agreement for further details.
 	(pt 600 1200)
 )
 (connector
-	(pt 592 432)
-	(pt 592 560)
-)
-(connector
-	(pt 592 560)
-	(pt 592 808)
-)
-(connector
 	(pt 592 808)
 	(pt 592 952)
 )
@@ -1953,10 +1814,6 @@ applicable agreement for further details.
 	(pt 584 1336)
 )
 (connector
-	(pt 576 592)
-	(pt 576 752)
-)
-(connector
 	(pt 576 752)
 	(pt 576 936)
 )
@@ -1965,16 +1822,8 @@ applicable agreement for further details.
 	(pt 576 1320)
 )
 (connector
-	(pt 560 624)
-	(pt 560 736)
-)
-(connector
 	(pt 560 736)
 	(pt 560 1408)
-)
-(connector
-	(pt 552 640)
-	(pt 552 720)
 )
 (connector
 	(pt 552 720)
@@ -1983,10 +1832,6 @@ applicable agreement for further details.
 (connector
 	(pt 552 904)
 	(pt 552 1056)
-)
-(connector
-	(pt 624 496)
-	(pt 624 672)
 )
 (connector
 	(pt 624 1008)
@@ -2048,6 +1893,230 @@ applicable agreement for further details.
 	(pt 856 784)
 	(pt 864 784)
 )
+(connector
+	(pt 624 488)
+	(pt 624 496)
+)
+(connector
+	(pt 624 496)
+	(pt 624 672)
+)
+(connector
+	(pt 616 480)
+	(pt 616 512)
+)
+(connector
+	(pt 616 512)
+	(pt 616 656)
+)
+(connector
+	(pt 608 472)
+	(pt 608 528)
+)
+(connector
+	(pt 608 528)
+	(pt 608 640)
+)
+(connector
+	(pt 600 368)
+	(pt 600 544)
+)
+(connector
+	(pt 600 544)
+	(pt 600 824)
+)
+(connector
+	(pt 592 432)
+	(pt 592 560)
+)
+(connector
+	(pt 592 560)
+	(pt 592 808)
+)
+(connector
+	(pt 584 368)
+	(pt 584 576)
+)
+(connector
+	(pt 584 576)
+	(pt 584 624)
+)
+(connector
+	(pt 576 584)
+	(pt 576 592)
+)
+(connector
+	(pt 576 592)
+	(pt 576 752)
+)
+(connector
+	(pt 568 568)
+	(pt 568 608)
+)
+(connector
+	(pt 568 608)
+	(pt 568 920)
+)
+(connector
+	(pt 560 552)
+	(pt 560 624)
+)
+(connector
+	(pt 560 624)
+	(pt 560 736)
+)
+(connector
+	(pt 552 536)
+	(pt 552 640)
+)
+(connector
+	(pt 552 640)
+	(pt 552 720)
+)
+(connector
+	(pt 360 416)
+	(pt 360 432)
+	(bus)
+)
+(connector
+	(pt 360 432)
+	(pt 360 448)
+	(bus)
+)
+(connector
+	(pt 360 352)
+	(pt 360 400)
+	(bus)
+)
+(connector
+	(pt 360 400)
+	(pt 360 416)
+	(bus)
+)
+(connector
+	(pt 520 496)
+	(pt 624 496)
+)
+(connector
+	(pt 520 512)
+	(pt 616 512)
+)
+(connector
+	(pt 520 528)
+	(pt 608 528)
+)
+(connector
+	(pt 520 544)
+	(pt 600 544)
+)
+(connector
+	(pt 520 560)
+	(pt 592 560)
+)
+(connector
+	(pt 520 576)
+	(pt 584 576)
+)
+(connector
+	(pt 520 592)
+	(pt 576 592)
+)
+(connector
+	(pt 520 608)
+	(pt 568 608)
+)
+(connector
+	(pt 520 624)
+	(pt 560 624)
+)
+(connector
+	(pt 520 640)
+	(pt 552 640)
+)
+(connector
+	(pt 520 400)
+	(pt 528 400)
+)
+(connector
+	(pt 528 328)
+	(pt 488 328)
+)
+(connector
+	(pt 488 336)
+	(pt 488 328)
+)
+(connector
+	(pt 520 416)
+	(pt 528 416)
+)
+(connector
+	(pt 528 328)
+	(pt 528 400)
+)
+(connector
+	(pt 520 432)
+	(pt 528 432)
+)
+(connector
+	(pt 528 400)
+	(pt 528 416)
+)
+(connector
+	(pt 520 448)
+	(pt 528 448)
+)
+(connector
+	(pt 528 416)
+	(pt 528 432)
+)
+(connector
+	(pt 520 464)
+	(pt 528 464)
+)
+(connector
+	(pt 528 432)
+	(pt 528 448)
+)
+(connector
+	(pt 520 480)
+	(pt 528 480)
+)
+(connector
+	(pt 528 448)
+	(pt 528 464)
+)
+(connector
+	(pt 528 464)
+	(pt 528 480)
+)
+(connector
+	(pt 616 1240)
+	(pt 616 1400)
+)
+(connector
+	(pt 616 1400)
+	(pt 616 1408)
+)
+(connector
+	(text "dat[3]" (rect 386 384 414 396)(font "Arial" ))
+	(pt 360 400)
+	(pt 424 400)
+)
+(connector
+	(text "dat[2]" (rect 376 400 404 412)(font "Arial" ))
+	(pt 360 416)
+	(pt 424 416)
+)
+(connector
+	(text "dat[1]" (rect 370 416 398 428)(font "Arial" ))
+	(pt 360 432)
+	(pt 424 432)
+)
+(connector
+	(text "dat[0]" (rect 379 432 407 444)(font "Arial" ))
+	(pt 360 448)
+	(pt 424 448)
+)
 (junction (pt 552 640))
 (junction (pt 560 624))
 (junction (pt 568 608))
@@ -2086,7 +2155,6 @@ applicable agreement for further details.
 (junction (pt 616 1000))
 (junction (pt 600 992))
 (junction (pt 552 1056))
-(junction (pt 552 1152))
 (junction (pt 584 1168))
 (junction (pt 592 1184))
 (junction (pt 600 1200))
@@ -2108,3 +2176,8 @@ applicable agreement for further details.
 (junction (pt 616 1104))
 (junction (pt 600 1088))
 (junction (pt 624 880))
+(junction (pt 528 400))
+(junction (pt 528 416))
+(junction (pt 528 432))
+(junction (pt 528 448))
+(junction (pt 528 464))
