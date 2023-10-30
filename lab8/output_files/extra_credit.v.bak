@@ -1,0 +1,13 @@
+module extra_credit (
+    input [7:0] binary_num,	// 8-bit binary number input
+    input carry_out,				// Carry-out/overflow bit from the full adder
+    output is_negative,
+    output exceeded_255
+);
+
+    assign is_negative = binary_num[7];	// Since it’s 2’s complement, MSB is the sign bit
+    
+    assign exceeded_255 = binary_num[7] & ~carry_out |	// Number is positive and carry out is high
+									~binary_num[7] & carry_out;	// Number is negative and no carry out
+
+endmodule

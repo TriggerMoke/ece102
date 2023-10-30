@@ -1,0 +1,101 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'CLOCK_AUTO'
+Slack : -4.832
+TNS   : -37.636
+
+Type  : Slow 1100mV 85C Model Setup 'CLOCK'
+Slack : -1.190
+TNS   : -6.810
+
+Type  : Slow 1100mV 85C Model Hold 'CLOCK'
+Slack : 0.472
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'CLOCK_AUTO'
+Slack : 2.170
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_AUTO'
+Slack : -2.636
+TNS   : -38.309
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK'
+Slack : -0.538
+TNS   : -6.704
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_AUTO'
+Slack : -4.600
+TNS   : -35.739
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK'
+Slack : -1.182
+TNS   : -7.007
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK'
+Slack : 0.504
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_AUTO'
+Slack : 1.982
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_AUTO'
+Slack : -2.636
+TNS   : -38.331
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK'
+Slack : -0.538
+TNS   : -6.459
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_AUTO'
+Slack : -1.725
+TNS   : -13.455
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK'
+Slack : -0.075
+TNS   : -0.158
+
+Type  : Fast 1100mV 85C Model Hold 'CLOCK'
+Slack : 0.185
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_AUTO'
+Slack : 1.037
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_AUTO'
+Slack : -2.174
+TNS   : -30.822
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK'
+Slack : -0.282
+TNS   : -2.339
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_AUTO'
+Slack : -1.600
+TNS   : -12.448
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK'
+Slack : -0.001
+TNS   : -0.001
+
+Type  : Fast 1100mV 0C Model Hold 'CLOCK'
+Slack : 0.177
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_AUTO'
+Slack : 0.921
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_AUTO'
+Slack : -2.174
+TNS   : -30.834
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK'
+Slack : -0.275
+TNS   : -2.282
+
+------------------------------------------------------------
